@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(222, 26%, 31%);
+  font-family: "Spartan", sans-serif;
+}
+.container {
+  width: 538px;
+  max-width: 538px;
+  padding: 15px;
+  padding-top: 50px;
+}
+section {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+section .numbers {
+  display: flex;
+  justify-content: flex-end;
+}
+section .numbers p {
+  margin-right: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+section .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section .top h1 {
+  color: #fff;
+}
+section .top .theme {
+  display: flex;
+  align-items: center;
+}
+section .top .theme p {
+  font-size: 9px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-right: 22px;
+}
+section .top .theme div {
+  height: 26px;
+  width: 70px;
+  background-color: hsl(223, 31%, 20%);
+  border-radius: 16px;
+  position: relative;
+}
+section .top .theme div span {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: hsl(6, 63%, 50%);
+  border-radius: 50%;
+  top: 4px;
+  left: 5px;
+  transition: all 0.5s;
+}
+section .bottom input {
+  outline: none;
+  width: 100%;
+  border: none;
+  border-radius: 9px;
+  background-color: hsl(224, 36%, 15%);
+  height: 128px;
+  margin-top: 30px;
+  color: hsl(0, 0, 100%);
+  font-family: "Spartan", sans-serif;
+  font-size: 40px;
+  text-align: right;
+  padding-right: 37px;
+}
+section .buttn {
+  background: hsl(223, 31%, 20%);
+  margin-top: 23px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 25px;
+  padding: 25px;
+  border-radius: 15px;
+}
+section .buttn button {
+  height: 60px;
+  outline: none;
+  border: none;
+  background-color: hsl(30, 25%, 89%);
+  border-radius: 15px;
+  border-bottom: 4px solid hsl(28, 16%, 65%);
+  font-size: 25px;
+  font-family: "Spartan", sans-serif;
+  cursor: pointer;
+  color: hsl(221, 14%, 31%);
+}
+section .buttn button:active {
+  background-color: #f1bc7e;
+}
+section .buttn button.del {
+  background-color: hsl(225, 21%, 49%);
+  border-bottom: 4px solid hsl(224, 28%, 35%);
+  color: #fff;
+  text-transform: uppercase;
+}
+section .buttn button.reset {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: hsl(225, 21%, 49%);
+  border-bottom: 4px solid hsl(224, 28%, 35%);
+  color: #fff;
+  text-transform: uppercase;
+}
+section .buttn button.equal {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  background-color: hsl(6, 63%, 50%);
+  border-bottom: 4px solid hsl(6, 70%, 34%);
+  color: #fff;
+  text-transform: uppercase;
+}
+/* start two */
+body.tow {
+  background-color: hsl(0, 0%, 90%);
+}
+
+.tow section .numbers p {
+  color: hsl(60, 10%, 19%);
+}
+
+.tow section .top h1 {
+  color: hsl(60, 10%, 19%);
+}
+
+.tow section .top .theme p {
+  color: hsl(60, 10%, 19%);
+}
+.tow section .top .theme div,
+.tow section .buttn {
+  background-color: hsl(0, 5%, 81%);
+}
+.tow section .top .theme div span {
+  background: hsl(25, 98%, 40%);
+  left: 34%;
+}
+
+.tow section .bottom input {
+  background-color: hsl(0, 0%, 93%);
+  color: hsl(60, 10%, 19%);
+}
+
+.tow section .buttn button {
+  background-color: hsl(45, 7%, 89%);
+  border-bottom: 4px solid hsl(35, 11%, 61%);
+  color: hsl(60, 10%, 19%);
+}
+.tow section .buttn button:active {
+  background-color: #faf5e3;
+}
+.tow section .buttn button.del,
+.tow section .buttn button.reset {
+  background-color: hsl(185, 42%, 37%);
+  border-bottom: 4px solid hsl(185, 58%, 25%);
+  color: #fff;
+}
+
+.tow section .buttn button.equle {
+  background-color: hsl(25, 98%, 40%);
+  border-bottom: 4px solid hsl(25, 99%, 27%);
+  color: #fff;
+}
+/* End two */
+/* start three */
+body.three {
+  background-color: hsl(268, 75%, 9%);
+}
+
+.three section .numbers p {
+  color: hsl(52, 100%, 62%);
+}
+
+.three section .top h1 {
+  color: hsl(52, 100%, 62%);
+}
+
+.three section .top .theme p {
+  color: hsl(52, 100%, 62%);
+}
+.three section .top .theme div,
+.three section .buttn {
+  background-color: hsl(268, 71%, 12%);
+}
+.three section .top .theme div span {
+  background: hsl(176, 100%, 44%);
+  left: 67%;
+}
+
+.three section .bottom input {
+  background-color: hsl(268, 71%, 12%);
+  color: hsl(52, 100%, 62%);
+}
+
+.three section .buttn button {
+  background-color: hsl(268, 47%, 21%);
+  border-bottom: 4px solid hsl(290, 70%, 36%);
+  color: hsl(52, 100%, 62%);
+}
+.three section .buttn button:active {
+  background-color: #54238b;
+}
+.three section .buttn button.del,
+.three section .buttn button.reset {
+  background-color: hsl(281, 89%, 26%);
+  border-bottom: 4px solid hsl(285, 91%, 52%);
+  color: #fff;
+}
+
+.three section .buttn button.equle {
+  background-color: hsl(176, 100%, 44%);
+  border-bottom: 4px solid hsl(177, 92%, 70%);
+  color: hsl(198, 20%, 13%);
+}
+/* End three */
+@media (max-width: 731px) {
+  section {
+    height: 100%;
+  }
+}
